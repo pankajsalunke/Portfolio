@@ -3,81 +3,59 @@ import {
   FaInstagram,
   FaLinkedin,
   FaGithub,
-  FaBehance,
   FaEnvelope,
   FaPhone,
 } from "react-icons/fa";
 
-import {Link, useNavigate} from "react-router-dom";
-
 const Footer = () => {
-  const navigate = useNavigate();
   return (
-    <footer className="bg-black text-gray-300 py-5">
-      <div className="container mx-auto text-center">
+    <footer className="bg-black text-gray-300 py-8 px-4">
+      <div className="max-w-6xl mx-auto text-center">
 
-        {/* <nav className="mt-4 flex justify-center space-x-6">
-          {[
-            "Home",
-            "Aboutme",
-            "Skills",
-            "Resume",
-            "Portfolio",
-            "Contactme",
-          ].map((item) => (
-            <button
-              key={item}
-              onClick={() => {
-                if (item === "Home") {
-                  let ite = item.split("Home").concat("/")[2];
-                  navigate(`${ite}`);
-                } else {
-                  navigate(`/${item.toLocaleLowerCase()}`);
-                }
-              }}
-              className="hover:text-orange-400 transition duration-300"
-            >
-              {item}
-            </button>
-          ))}
-        </nav> */}
-
-        <div className="flex justify-center space-x-6 mt-6">
-          <Link
-            to={"https://www.instagram.com/pankajsalunke29/"}
+        {/* Social Media Links */}
+        <div className="flex justify-center space-x-6 text-xl mb-6">
+          <a
+            href="https://www.instagram.com/pankajsalunke29/"
             target="_blank"
-            className="text-xl hover:text-orange-400"
+            rel="noopener noreferrer"
+            className="hover:text-orange-400 transition-colors"
           >
             <FaInstagram />
-          </Link>
-          <Link
-            to={"https://www.linkedin.com/in/pankaj-salunke-3342b7203"}
+          </a>
+          <a
+            href="https://www.linkedin.com/in/pankaj-salunke-3342b7203"
             target="_blank"
-            className="text-xl hover:text-orange-400"
+            rel="noopener noreferrer"
+            className="hover:text-orange-400 transition-colors"
           >
             <FaLinkedin />
-          </Link>
-          <Link
-            to={"https://github.com/pankajsalunke"}
+          </a>
+          <a
+            href="https://github.com/pankajsalunke"
             target="_blank"
-            className="text-xl hover:text-orange-400"
+            rel="noopener noreferrer"
+            className="hover:text-orange-400 transition-colors"
           >
             <FaGithub />
-          </Link>
+          </a>
         </div>
 
-        <div className="mt-6 flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
-          <div className="flex items-center space-x-2">
+        {/* Contact Info */}
+        <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-sm sm:text-base">
+          <div className="flex items-center gap-2">
             <FaEnvelope />
-            <h1 className="font-semibold">:</h1>
             <span>salunkep610@gmail.com</span>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center gap-2">
             <FaPhone />
-            <h1 className="font-semibold">:</h1>
             <span>+91 7447890852</span>
           </div>
         </div>
+
+
+        <p className="mt-6 text-xs text-gray-500">
+          © {new Date().getFullYear()} Pankaj Salunke. All rights reserved.
+        </p>
       </div>
     </footer>
   );
