@@ -1,21 +1,20 @@
 import React from "react";
 import my_img from "../assets/my_img.png";
 import ReactTypingEffect from "react-typing-effect";
-import {Link} from 'react-router-dom'
 
 const Home = () => {
-    return (
+  return (
     <div
       id="home"
-      className="text-white min-h-screen bg-slate-900"
+      className="text-white min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800"
     >
-      <section className="flex flex-col md:flex-row justify-center items-center min-h-screen px-6 sm:px-10 py-12 md:py-0">
+      <section className="flex flex-col md:flex-row items-center justify-between min-h-screen px-6 sm:px-10 py-16 max-w-7xl mx-auto">
         {/* Left Section */}
-        <div className="md:w-1/2 text-center md:text-left">
-          <p className="text-lg text-orange-400">Hi, I’m</p>
-          <h2 className="text-4xl font-bold">Pankaj Salunke</h2>
+        <div className="w-full md:w-1/2 text-center md:text-left">
+          <p className="text-lg sm:text-xl text-orange-400">Hi, I’m</p>
+          <h2 className="text-3xl sm:text-4xl font-bold">Pankaj Salunke</h2>
 
-          <h1 className="text-4xl sm:text-5xl font-bold text-orange-500 mt-2">
+          <h1 className="text-3xl sm:text-5xl font-bold text-orange-500 mt-2">
             <ReactTypingEffect
               text={[
                 "Full Stack Developer",
@@ -29,8 +28,8 @@ const Home = () => {
             />
           </h1>
 
-          <p className="mt-4 text-gray-300 text-md sm:text-lg">
-            Developing Efficient & Scalable Applications
+          <p className="mt-4 text-gray-300 text-base sm:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
+            Developing efficient and scalable applications with clean code, user-centered design, and modern tech stacks.
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -54,8 +53,8 @@ const Home = () => {
         </div>
 
         {/* Right Section */}
-        <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
-          <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-gray-800 rounded-full flex justify-center items-center overflow-hidden hover:scale-105 transition-transform duration-300 shadow-xl">
+        <div className="w-full md:w-1/2 flex justify-center mt-12 md:mt-0">
+          <div className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-gray-800 rounded-full flex justify-center items-center overflow-hidden hover:scale-105 transition-transform duration-300 shadow-xl">
             <img
               src={my_img}
               alt="Pankaj Salunke"

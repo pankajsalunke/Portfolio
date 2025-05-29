@@ -1,5 +1,4 @@
 import React from "react";
-import {Route, Routes, useLocation} from "react-router-dom";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Skills from "./pages/Skills";
@@ -10,53 +9,19 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 
 const App = () => {
-  // const location = useLocation();
-
   return (
-    <div >
+    <div className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white scroll-smooth">
       <NavBar />
-      <Home />
-      <AboutMe />
-      <Skills />
-      <Portfolio />
-      <Resume />
-      <ContactMe />
+      <main className="pt-24"> 
+        <Home />
+        <AboutMe />
+        <Skills />
+        <Portfolio />
+        <Resume />
+        <ContactMe />
+      </main>
       <Footer />
     </div>
-    // <div>
-    //   <NavBar />
-    //   <div className="">
-    //     <Routes>
-    //       <Route
-          
-    //         path="/"
-    //         element={<Home  />}
-    //       />
-    //       <Route
-    //         path="/aboutme"
-    //         element={<AboutMe />}
-    //       />
-    //       <Route
-    //         path="/skills"
-    //         element={<Skills />}
-    //       />
-    //       <Route
-    //         path="/resume"
-    //         element={<Resume />}
-    //       />
-    //       <Route
-    //         path="/contactme"
-    //         element={<ContactMe />}
-    //       />
-    //       <Route
-    //         path="/portfolio"
-    //         element={<Portfolio />}
-    //       />
-    //     </Routes>
-    //   </div>
-
-    //   {location.pathname !== "/" && <Footer />}
-    // </div>
   );
 };
 

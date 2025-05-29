@@ -13,15 +13,15 @@ const NavBar = () => {
 
   return (
     <div className="bg-gradient-to-r from-gray-950 via-blue-900 to-gray-950 shadow-md fixed top-0 left-0 right-0 z-50">
-      <nav className="flex justify-between items-center p-4 max-w-6xl mx-auto">
+      <nav className="flex justify-center items-center p-4 max-w-6xl mx-auto">
         {/* Logo */}
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           <img
             className="h-10 w-10 rounded-full object-cover"
             src={logo}
             alt="Logo"
           />
-        </div>
+        </div> */}
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-white text-lg font-medium">
