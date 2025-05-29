@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="text-white min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800"
+      className="text-white min-h-screen bg-gray-900"
     >
       <section className="flex flex-col md:flex-row items-center justify-between min-h-screen px-6 sm:px-10 py-16 max-w-7xl mx-auto">
         {/* Left Section */}

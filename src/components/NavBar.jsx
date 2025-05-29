@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu, FiX } from "react-icons/fi";
-import logo from "../assets/logo.webp";
+
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,21 +9,12 @@ const NavBar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
-  const navItems = ["home", "aboutme", "skills", "portfolio", "resume", "contactme"];
+  const navItems = ["home", "about me", "skills", "portfolio", "resume", "contactme"];
 
   return (
     <div className="bg-gradient-to-r from-gray-950 via-blue-900 to-gray-950 shadow-md fixed top-0 left-0 right-0 z-50">
       <nav className="flex justify-center items-center p-4 max-w-6xl mx-auto">
-        {/* Logo */}
-        {/* <div className="flex items-center">
-          <img
-            className="h-10 w-10 rounded-full object-cover"
-            src={logo}
-            alt="Logo"
-          />
-        </div> */}
-
-        {/* Desktop Menu */}
+        
         <ul className="hidden md:flex space-x-6 text-white text-lg font-medium">
           {navItems.map((item) => (
             <li
