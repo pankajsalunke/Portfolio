@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import resto from '../assets/Images/Resto.png'
 import portfolio from '../assets/Images/portfolio.png'
 import emp from '../assets/Images/Emp.png'
-import admin from '../assets/Images/admin.png'
+import admin from '../assets/Images/Admin.png'
 import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
