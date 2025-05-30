@@ -10,9 +10,9 @@ import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
-    <div className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white scroll-smooth">
+    <div className="text-white scroll-smooth">
       <NavBar />
-      <main className=""> 
+      <main className="pt-24"> 
         <Home />
         <AboutMe />
         <Skills />
