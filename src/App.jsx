@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white scroll-smooth">
       <NavBar />
-      <main className="pt-24"> 
+      <main className=""> 
         <Home />
         <AboutMe />
         <Skills />
