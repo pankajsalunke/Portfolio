@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="text-white scroll-smooth">
       <NavBar />
-      <main className="pt-24"> 
+      <main className=""> 
         <Home />
         <AboutMe />
         <Skills />
