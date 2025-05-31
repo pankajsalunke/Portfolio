@@ -8,5 +8,8 @@ export default defineConfig({
     port: process.env.PORT || 5173, 
   },
   plugins: [react(), svgr()],
+  build: {
+    outDir: 'build', // Change default from 'dist' to 'build'
+  },
 
 });
