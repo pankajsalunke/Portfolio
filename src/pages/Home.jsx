@@ -29,7 +29,8 @@ const Home = () => {
           </h1>
 
           <p className="mt-4 text-gray-300 text-base sm:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
-            Developing efficient and scalable applications with clean code, user-centered design, and modern tech stacks.
+            Developing efficient and scalable applications with clean code,
+            user-centered design, and modern tech stacks.
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -43,7 +44,7 @@ const Home = () => {
             </a>
 
             <a
-              href="/Pankaj_Salunke_Resume.pdf"
+              href="/Pankaj_Salunke_CV.pdf"
               download
               className="border border-gray-400 text-white px-6 py-2 rounded-lg hover:border-orange-500 hover:text-orange-500 active:scale-95 transition-all duration-300 shadow-md text-center"
             >
