@@ -35,13 +35,13 @@ const NavBar = () => {
           ))}
         </ul>
 
-        {/* Mobile Menu Button */}
+       
         <div className="md:hidden text-white text-2xl cursor-pointer" onClick={toggleMenu}>
           {menuOpen ? <FiX /> : <FiMenu />}
         </div>
       </nav>
 
-      {/* Mobile Dropdown Menu */}
+     
       {menuOpen && (
         <ul className="md:hidden flex flex-col items-center bg-gray-950 text-white text-lg font-medium space-y-4 py-4 transition-all duration-300">
           {navItems.map((item) => (

@@ -1,11 +1,14 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
-import { Link } from "react-router-dom";
+import {FaGithub} from "react-icons/fa";
+import {CiLinkedin} from "react-icons/ci";
+import {Link} from "react-router-dom";
 
 const Resume = () => {
   return (
-    <div id="resume" className="bg-gray-900 text-white min-h-screen p-4 md:p-8">
+    <div
+      id="resume"
+      className="bg-gray-900 text-white min-h-screen p-4 md:p-8"
+    >
       <div className="max-w-4xl mx-auto">
         <div className="text-center">
           <h1 className="text-3xl md:text-5xl font-bold text-yellow-300">
@@ -66,11 +69,19 @@ const Resume = () => {
             Skills
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 mt-4">
-            <div className="bg-gray-800 p-2 md:p-4 rounded-lg">Communication</div>
-            <div className="bg-gray-800 p-2 md:p-4 rounded-lg">Problem Solving</div>
+            <div className="bg-gray-800 p-2 md:p-4 rounded-lg">
+              Communication
+            </div>
+            <div className="bg-gray-800 p-2 md:p-4 rounded-lg">
+              Problem Solving
+            </div>
             <div className="bg-gray-800 p-2 md:p-4 rounded-lg">Team Work</div>
-            <div className="bg-gray-800 p-2 md:p-4 rounded-lg">Time Management</div>
-            <div className="bg-gray-800 p-2 md:p-4 rounded-lg">Fast Learner</div>
+            <div className="bg-gray-800 p-2 md:p-4 rounded-lg">
+              Time Management
+            </div>
+            <div className="bg-gray-800 p-2 md:p-4 rounded-lg">
+              Fast Learner
+            </div>
           </div>
         </div>
 
@@ -121,7 +132,8 @@ const Resume = () => {
           </h2>
           <div className="mt-4 text-gray-400">
             <p>
-              <strong>MCS</strong> - R.B.N.B. College, Shrirampur (SPPU) | Pursuing | 2025
+              <strong>MCS</strong> - R.B.N.B. College, Shrirampur (SPPU) |
+              Pursuing | 2025
             </p>
             <p>
               <strong>BCS</strong> - R.B.N.B. College, Shrirampur (SPPU) | CGPA:
@@ -132,7 +144,8 @@ const Resume = () => {
               2020
             </p>
             <p>
-              <strong>SSC</strong> - New English School, Takalibhan | 71.80% | 2018
+              <strong>SSC</strong> - New English School, Takalibhan | 71.80% |
+              2018
             </p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import my_img from "../assets/my_img.png";
+import my_img from "../assets/my_image.png";
 import ReactTypingEffect from "react-typing-effect";
 
 const Home = () => {
@@ -55,11 +55,11 @@ const Home = () => {
 
         {/* Right Section */}
         <div className="w-full md:w-1/2 flex justify-center mt-12 md:mt-0">
-          <div className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-gray-800 rounded-full flex justify-center items-center overflow-hidden hover:scale-105 transition-transform duration-300 shadow-xl">
+          <div className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-gray-800 rounded-full flex justify-center items-center overflow-hidden hover:scale-105 transition-transform duration-300 shadow-xl ">
             <img
               src={my_img}
               alt="Pankaj Salunke"
-              className="rounded-full w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-full "
             />
           </div>
         </div>
