@@ -9,7 +9,6 @@ const Home = () => {
       className="text-white min-h-screen bg-gray-900"
     >
       <section className="flex flex-col md:flex-row items-center justify-between min-h-screen px-6 sm:px-10 py-16 max-w-7xl mx-auto">
-        {/* Left Section */}
         <div className="w-full md:w-1/2 text-center md:text-left">
           <p className="text-lg sm:text-xl text-orange-400">Hi, I’m</p>
           <h2 className="text-3xl sm:text-4xl font-bold">Pankaj Salunke</h2>
@@ -53,7 +52,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Right Section */}
         <div className="w-full md:w-1/2 flex justify-center mt-12 md:mt-0">
           <div className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-gray-800 rounded-full flex justify-center items-center overflow-hidden hover:scale-105 transition-transform duration-300 shadow-xl ">
             <img
