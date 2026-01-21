@@ -1,7 +1,6 @@
-import  { useState } from "react";
-import { Link } from "react-scroll";
-import { FiMenu, FiX } from "react-icons/fi";
-
+import {useState} from "react";
+import {Link} from "react-scroll";
+import {FiMenu, FiX} from "react-icons/fi";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,12 +8,18 @@ const NavBar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
-  const navItems = ["home", "about me", "skills", "portfolio", "resume", "contactme"];
+  const navItems = [
+    "home",
+    "about me",
+    "skills",
+    "portfolio",
+    "resume",
+    "contactme",
+  ];
 
   return (
     <div className="bg-gradient-to-r from-gray-950 via-blue-900 to-gray-950 shadow-md fixed top-0 left-0 right-0 z-50">
       <nav className="flex justify-center items-center p-4 max-w-6xl mx-auto">
-        
         <ul className="hidden md:flex space-x-6 text-white text-lg font-medium">
           {navItems.map((item) => (
             <li
@@ -35,13 +40,14 @@ const NavBar = () => {
           ))}
         </ul>
 
-       
-        <div className="md:hidden text-white text-2xl cursor-pointer" onClick={toggleMenu}>
+        <div
+          className="md:hidden text-white text-2xl cursor-pointer"
+          onClick={toggleMenu}
+        >
           {menuOpen ? <FiX /> : <FiMenu />}
         </div>
       </nav>
 
-     
       {menuOpen && (
         <ul className="md:hidden flex flex-col items-center bg-gray-950 text-white text-lg font-medium space-y-4 py-4 transition-all duration-300">
           {navItems.map((item) => (

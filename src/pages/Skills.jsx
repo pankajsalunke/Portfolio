@@ -1,4 +1,3 @@
-// import React from "react";
 import AdditionalSkills from "../components/AditionalSkills";
 
 const skills = [

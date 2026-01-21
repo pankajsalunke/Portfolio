@@ -1,5 +1,3 @@
-
-
 const additionalSkills = [
   {
     name: "Bootstrap",

@@ -1,4 +1,3 @@
-
 import {
   FaInstagram,
   FaLinkedin,
@@ -11,8 +10,6 @@ const Footer = () => {
   return (
     <footer className="bg-black text-gray-300 py-8 px-4">
       <div className="max-w-6xl mx-auto text-center">
-
-        
         <div className="flex justify-center space-x-6 text-xl mb-6">
           <a
             href="https://www.instagram.com/pankajsalunke29/"
@@ -40,7 +37,6 @@ const Footer = () => {
           </a>
         </div>
 
-        
         <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-sm sm:text-base">
           <div className="flex items-center gap-2">
             <FaEnvelope />
@@ -51,7 +47,6 @@ const Footer = () => {
             <span>+91 7447890852</span>
           </div>
         </div>
-
 
         <p className="mt-6 text-xs text-gray-500">
           © {new Date().getFullYear()} Pankaj Salunke. All rights reserved.
