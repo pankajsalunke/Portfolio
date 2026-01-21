@@ -1,4 +1,4 @@
-import React from "react";
+
 import my_img from "../assets/my_image.png";
 import ReactTypingEffect from "react-typing-effect";
 

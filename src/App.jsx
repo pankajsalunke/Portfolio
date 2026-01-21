@@ -1,8 +1,8 @@
-import React from "react";
+
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Skills from "./pages/Skills";
-import Resume from "./pages/Resume";
+// import Resume from "./pages/Resume";
 import ContactMe from "./pages/ContactMe";
 import Portfolio from "./pages/Portfolio";
 import Footer from "./components/Footer";
@@ -12,12 +12,12 @@ const App = () => {
   return (
     <div className="text-white scroll-smooth">
       <NavBar />
-      <main className=""> 
+      <main className="">
         <Home />
         <AboutMe />
         <Skills />
         <Portfolio />
-        <Resume />
+        {/* <Resume /> */}
         <ContactMe />
       </main>
       <Footer />

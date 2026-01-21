@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import AdditionalSkills from "../components/AditionalSkills";
 
 const skills = [
@@ -38,7 +38,10 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-slate-900 text-white py-16 px-8">
+    <section
+      id="skills"
+      className="bg-slate-900 text-white py-16 px-8"
+    >
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-5xl font-bold text-white mb-12">MY SKILLS</h2>
 
@@ -54,12 +57,13 @@ const Skills = () => {
                 alt={skill.name}
                 className="w-20 h-20"
               />
-              <h5 className="text-lg text-slate-400 font-medium">{skill.name}</h5>
+              <h5 className="text-lg text-slate-400 font-medium">
+                {skill.name}
+              </h5>
             </div>
           ))}
         </div>
 
-      
         <div className="mt-12 bg-gray-800 p-8 rounded-xl shadow-lg">
           <AdditionalSkills />
         </div>

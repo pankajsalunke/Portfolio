@@ -1,15 +1,13 @@
-import React from "react";
+
 
 const AboutMe = () => {
   return (
     <section
-      id="about me" 
+      id="about me"
       className="bg-slate-900 text-white min-h-screen flex items-center justify-center px-4 sm:px-6 py-20"
     >
       <div className="w-full max-w-3xl text-center">
-        <h2 className="text-5xl font-bold text-white mb-12">
-          About Me
-        </h2>
+        <h2 className="text-5xl font-bold text-white mb-12">About Me</h2>
 
         <h1 className="text-4xl sm:text-5xl font-bold text-orange-500 mt-2 transition-transform duration-300 hover:scale-105">
           Full Stack Developer
