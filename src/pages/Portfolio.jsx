@@ -29,7 +29,7 @@ const Portfolio = () => {
       title: "Employee Task Management (User)",
       category: "Website Design",
       image: emp,
-      link: "",
+      link: "https://employee-task-management-pearl.vercel.app/",
       code_link:
         "https://github.com/pankajsalunke/employee_task_management/tree/main/backend",
     },
@@ -38,7 +38,7 @@ const Portfolio = () => {
       title: "Employee Task Management (Admin)",
       category: "Website Design",
       image: admin,
-      link: "",
+      link: "https://employee-task-management-pearl.vercel.app/admin-login",
       code_link:
         "https://github.com/pankajsalunke/employee_task_management/tree/main/frontend",
     },
@@ -57,7 +57,7 @@ const Portfolio = () => {
         {portfolioItems
           .filter(
             (item) =>
-              activeCategory === "All" || item.category === activeCategory
+              activeCategory === "All" || item.category === activeCategory,
           )
           .map((item) => (
             <div
