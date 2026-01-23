@@ -3,6 +3,7 @@ import resto from "../assets/Images/Resto.png";
 import portfolio from "../assets/Images/portfolio.png";
 import emp from "../assets/Images/Emp.png";
 import admin from "../assets/Images/Admin.png";
+import E_commerce from "../assets/Images/E-Commerce.png";
 
 const Portfolio = () => {
   const [activeCategory] = useState("Website Design");
@@ -41,6 +42,14 @@ const Portfolio = () => {
       link: "https://employee-task-management-pearl.vercel.app/admin-login",
       code_link:
         "https://github.com/pankajsalunke/employee_task_management/tree/main/frontend",
+    },
+    {
+      id: 5,
+      title: "E-commerce page",
+      category: "Website Design",
+      image: E_commerce,
+      link: "https://e-commerce-l88d.onrender.com/",
+      code_link: "https://github.com/pankajsalunke/E-Commerce",
     },
   ];
 

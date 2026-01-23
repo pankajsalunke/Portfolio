@@ -13,7 +13,7 @@ const NavBar = () => {
     "about me",
     "skills",
     "portfolio",
-    "resume",
+    // "resume",
     "contactme",
   ];
 
