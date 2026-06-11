@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto text-center">
         <div className="flex justify-center space-x-6 text-xl mb-6">
           <a
-            href="https://www.instagram.com/pankajsalunke29/"
+            href="https://www.instagram.com/pankaj_salunke_02/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-orange-400 transition-colors"

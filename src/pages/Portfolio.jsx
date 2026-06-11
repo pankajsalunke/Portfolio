@@ -1,9 +1,12 @@
 import {useState} from "react";
+import ImageCarousel from "../components/ImageCarousel";
 import resto from "../assets/Images/Resto.png";
 import portfolio from "../assets/Images/portfolio.png";
 import emp from "../assets/Images/Emp.png";
 import admin from "../assets/Images/Admin.png";
 import E_commerce from "../assets/Images/E-Commerce.png";
+import homePage from "../assets/Images/HOME_PAGE.png";
+import roomPage from "../assets/Images/ROOM_PAGE.png";
 
 const Portfolio = () => {
   const [activeCategory] = useState("Website Design");
@@ -13,7 +16,7 @@ const Portfolio = () => {
       id: 1,
       title: "Restaurant Website",
       category: "Website Design",
-      image: resto,
+      images: [resto],
       link: "https://restroruntweb.onrender.com/",
       code_link: "https://github.com/pankajsalunke/restroruntweb",
     },
@@ -21,15 +24,15 @@ const Portfolio = () => {
       id: 2,
       title: "Portfolio Website",
       category: "Website Design",
-      image: portfolio,
-      link: "https://portfolio-1gxu.onrender.com",
+      images: [portfolio],
+      link: "https://portfolio-1-hh2f.onrender.com/",
       code_link: "https://github.com/pankajsalunke/Portfolio",
     },
     {
       id: 3,
       title: "Employee Task Management (User)",
       category: "Website Design",
-      image: emp,
+      images: [emp],
       link: "https://employee-task-management-pearl.vercel.app/",
       code_link:
         "https://github.com/pankajsalunke/employee_task_management/tree/main/backend",
@@ -38,7 +41,7 @@ const Portfolio = () => {
       id: 4,
       title: "Employee Task Management (Admin)",
       category: "Website Design",
-      image: admin,
+      images: [admin],
       link: "https://employee-task-management-pearl.vercel.app/admin-login",
       code_link:
         "https://github.com/pankajsalunke/employee_task_management/tree/main/frontend",
@@ -47,9 +50,17 @@ const Portfolio = () => {
       id: 5,
       title: "E-commerce page",
       category: "Website Design",
-      image: E_commerce,
+      images: [E_commerce],
       link: "https://e-commerce-l88d.onrender.com/",
       code_link: "https://github.com/pankajsalunke/E-Commerce",
+    },
+    {
+      id: 6,
+      title: "Room Booking Application",
+      category: "Website Design",
+      images: [homePage, roomPage],
+      link: null,
+      code_link: "https://github.com/pankajsalunke/RoomBokinng-Application",
     },
   ];
 
@@ -73,12 +84,11 @@ const Portfolio = () => {
               key={item.id}
               className="relative bg-black rounded-lg overflow-hidden border border-gray-700 hover:border-orange-400 transition"
             >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-60 object-center opacity-80 hover:opacity-100 transition duration-300"
+              <ImageCarousel
+                images={item.images}
+                title={item.title}
               />
-              <div className="absolute bottom-0 w-full text-center p-4 bg-gray-900 bg-opacity-80 backdrop-blur-sm">
+              <div className="absolute bottom-0 w-full text-center p-4 bg-gray-900 bg-opacity-80 ">
                 <h3 className="text-lg font-semibold">{item.title}</h3>
                 <p className="text-sm text-gray-400 mb-2">{item.category}</p>
                 <div className="flex flex-col sm:flex-row justify-between gap-4 text-sm text-orange-400">
