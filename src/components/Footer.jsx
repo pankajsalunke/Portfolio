@@ -42,10 +42,10 @@ const Footer = () => {
             <FaEnvelope />
             <span>salunkep610@gmail.com</span>
           </div>
-          {/* <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2">
             <FaPhone />
             <span>+91 7447890852</span>
-          </div> */}
+          </div>
         </div>
 
         <p className="mt-6 text-xs text-gray-500">
