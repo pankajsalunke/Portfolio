@@ -1,59 +1,41 @@
-import {
-  FaInstagram,
-  FaLinkedin,
-  FaGithub,
-  FaEnvelope,
-  FaPhone,
-} from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
-const Footer = () => {
-  return (
-    <footer className="bg-black text-gray-300 py-8 px-4">
-      <div className="max-w-6xl mx-auto text-center">
-        <div className="flex justify-center space-x-6 text-xl mb-6">
+const socials = [
+  { icon: FaGithub, href: "https://github.com/pankajsalunke", label: "GitHub" },
+  {
+    icon: FaLinkedin,
+    href: "https://www.linkedin.com/in/pankaj-salunke-3342b7203",
+    label: "LinkedIn",
+  },
+  {
+    icon: FaInstagram,
+    href: "https://www.instagram.com/pankaj_salunke_02/",
+    label: "Instagram",
+  },
+];
+
+const Footer = () => (
+  <footer className="relative border-t px-5 py-10" style={{ borderColor: "rgb(var(--line))" }}>
+    <div className="max-w-6xl mx-auto flex flex-col items-center gap-5 text-center">
+      <div className="flex gap-3">
+        {socials.map(({ icon: Icon, href, label }) => (
           <a
-            href="https://www.instagram.com/pankaj_salunke_02/"
+            key={label}
+            href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-orange-400 transition-colors"
+            aria-label={label}
+            className="h-11 w-11 grid place-items-center rounded-full card text-lg text-muted hover:text-accent2 hover:-translate-y-1 transition duration-300"
           >
-            <FaInstagram />
+            <Icon />
           </a>
-          <a
-            href="https://www.linkedin.com/in/pankaj-salunke-3342b7203"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-orange-400 transition-colors"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://github.com/pankajsalunke"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-orange-400 transition-colors"
-          >
-            <FaGithub />
-          </a>
-        </div>
-
-        <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-sm sm:text-base">
-          <div className="flex items-center gap-2">
-            <FaEnvelope />
-            <span>salunkep610@gmail.com</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <FaPhone />
-            <span>+91 7447890852</span>
-          </div>
-        </div>
-
-        <p className="mt-6 text-xs text-gray-500">
-          © {new Date().getFullYear()} Pankaj Salunke. All rights reserved.
-        </p>
+        ))}
       </div>
-    </footer>
-  );
-};
+      <p className="text-sm text-muted">
+        Designed & built by Pankaj Salunke · © {new Date().getFullYear()}
+      </p>
+    </div>
+  </footer>
+);
 
 export default Footer;

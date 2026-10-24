@@ -2,7 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============ THEME ============
+   Change these numbers (R G B) to re-theme the entire site.
+   --accent / --accent-2 are the two highlight colors. */
+:root {
+  --bg: 10 10 20;
+  --surface: 22 22 38;
+  --text: 235 235 245;
+  --muted: 150 152 178;
+  --line: 255 255 255 / 0.08;
+  --accent: 124 92 255; /* violet */
+  --accent-2: 34 211 238; /* cyan */
+}
+:root.light {
+  --bg: 247 247 252;
+  --surface: 255 255 255;
+  --text: 20 20 38;
+  --muted: 92 94 118;
+  --line: 20 20 38 / 0.1;
+  --accent: 98 66 240;
+  --accent-2: 8 145 178;
+}
 
-html {
+@layer base {
+  html {
     scroll-behavior: smooth;
   }
+  body {
+    @apply bg-bg text-ink font-sans antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  ::selection {
+    background: rgb(var(--accent) / 0.35);
+  }
+  :focus-visible {
+    outline: 2px solid rgb(var(--accent-2));
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .section {
+    @apply relative px-5 sm:px-8 py-20 sm:py-28;
+  }
+  .container-x {
+    @apply max-w-6xl mx-auto;
+  }
+  .card {
+    @apply bg-surface rounded-2xl border;
+    border-color: rgb(var(--line));
+  }
+  .gradient-text {
+    background-image: linear-gradient(
+      90deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-2))
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 font-semibold text-white
+           transition duration-300 hover:-translate-y-0.5 active:scale-95;
+    background-image: linear-gradient(
+      90deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-2))
+    );
+    box-shadow: 0 8px 24px -8px rgb(var(--accent) / 0.6);
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 font-semibold text-ink
+           border transition duration-300 hover:-translate-y-0.5 active:scale-95 hover:border-accent hover:text-accent;
+    border-color: rgb(var(--line));
+  }
+  .chip {
+    @apply inline-block rounded-full px-3 py-1 text-xs font-medium text-accent2;
+    background: rgb(var(--accent-2) / 0.1);
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .spin-slow {
+    animation: none;
+  }
+}
