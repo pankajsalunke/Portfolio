@@ -42,7 +42,7 @@ const Home = () => {
             </a>
 
             <a
-              href="/Pankaj_Salunke_CV.pdf"
+              href="/pankaj_resume.pdf"
               download
               className="border border-gray-400 text-white px-6 py-2 rounded-lg hover:border-orange-500 hover:text-orange-500 active:scale-95 transition-all duration-300 shadow-md text-center"
             >
