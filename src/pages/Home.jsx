@@ -1,14 +1,14 @@
 import ReactTypingEffect from "react-typing-effect";
-import { Link } from "react-scroll";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FiDownload, FiMapPin } from "react-icons/fi";
-import { motion } from "framer-motion";
+import {Link} from "react-scroll";
+import {FaGithub, FaLinkedin} from "react-icons/fa";
+import {FiDownload, FiMapPin} from "react-icons/fi";
+import {motion} from "framer-motion";
 import my_img from "../assets/my_image.png";
 
 const fade = (delay) => ({
-  initial: { opacity: 0, y: 24 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, delay },
+  initial: {opacity: 0, y: 24},
+  animate: {opacity: 1, y: 0},
+  transition: {duration: 0.6, delay},
 });
 
 const Home = () => {
@@ -21,12 +21,12 @@ const Home = () => {
       <div
         aria-hidden="true"
         className="absolute -top-32 -left-32 h-96 w-96 rounded-full blur-3xl opacity-30"
-        style={{ background: "rgb(var(--accent))" }}
+        style={{background: "rgb(var(--accent))"}}
       />
       <div
         aria-hidden="true"
         className="absolute -bottom-32 -right-24 h-96 w-96 rounded-full blur-3xl opacity-20"
-        style={{ background: "rgb(var(--accent-2))" }}
+        style={{background: "rgb(var(--accent-2))"}}
       />
 
       <div className="relative max-w-6xl mx-auto w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12">
@@ -42,7 +42,10 @@ const Home = () => {
             Open to frontend / full stack roles
           </motion.div>
 
-          <motion.p {...fade(0.1)} className="mt-6 text-lg text-muted">
+          <motion.p
+            {...fade(0.1)}
+            className="mt-6 text-lg text-muted"
+          >
             Hi, I&apos;m
           </motion.p>
           <motion.h1
@@ -94,11 +97,17 @@ const Home = () => {
               smooth
               duration={300}
               offset={-70}
+              data-umami-event="Click View my work"
               className="btn-primary cursor-pointer"
             >
               View my work
             </Link>
-            <a href="/pankaj_resume.pdf" download className="btn-ghost">
+            <a
+              href="/pankaj_resume.pdf"
+              download
+              data-umami-event="Download CV"
+              className="btn-ghost"
+            >
               <FiDownload /> Download CV
             </a>
           </motion.div>
@@ -112,6 +121,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
+              data-umami-event="Click GitHub"
               className="h-11 w-11 grid place-items-center rounded-full card text-muted hover:text-accent2 hover:-translate-y-1 transition duration-300"
             >
               <FaGithub />
@@ -121,6 +131,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
+              data-umami-event="Click LinkedIn"
               className="h-11 w-11 grid place-items-center rounded-full card text-muted hover:text-accent2 hover:-translate-y-1 transition duration-300"
             >
               <FaLinkedin />
@@ -129,9 +140,9 @@ const Home = () => {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
+          initial={{opacity: 0, scale: 0.9}}
+          animate={{opacity: 1, scale: 1}}
+          transition={{duration: 0.7, delay: 0.2}}
           className="w-full md:w-1/2 flex justify-center"
         >
           <div className="relative h-56 w-56 sm:h-72 sm:w-72 md:h-80 md:w-80 hover:scale-105 transition-transform duration-500">

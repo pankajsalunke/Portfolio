@@ -1,7 +1,7 @@
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import {FaInstagram, FaLinkedin, FaGithub} from "react-icons/fa";
 
 const socials = [
-  { icon: FaGithub, href: "https://github.com/pankajsalunke", label: "GitHub" },
+  {icon: FaGithub, href: "https://github.com/pankajsalunke", label: "GitHub"},
   {
     icon: FaLinkedin,
     href: "https://www.linkedin.com/in/pankaj-salunke-3342b7203",
@@ -15,10 +15,13 @@ const socials = [
 ];
 
 const Footer = () => (
-  <footer className="relative border-t px-5 py-10" style={{ borderColor: "rgb(var(--line))" }}>
+  <footer
+    className="relative border-t px-5 py-10"
+    style={{borderColor: "rgb(var(--line))"}}
+  >
     <div className="max-w-6xl mx-auto flex flex-col items-center gap-5 text-center">
       <div className="flex gap-3">
-        {socials.map(({ icon: Icon, href, label }) => (
+        {socials.map(({icon: Icon, href, label}) => (
           <a
             key={label}
             href={href}
@@ -33,6 +36,11 @@ const Footer = () => (
       </div>
       <p className="text-sm text-muted">
         Designed & built by Pankaj Salunke · © {new Date().getFullYear()}
+      </p>
+      <p className="text-xs text-muted/80 max-w-md">
+        This site uses Umami to collect anonymous visit statistics (such as
+        country, device and pages viewed). No cookies or personal information
+        are stored.
       </p>
     </div>
   </footer>
